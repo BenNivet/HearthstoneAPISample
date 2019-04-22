@@ -26,21 +26,9 @@ extension TabBarController {
 // MARK: - TabBarViewControllerProtocol
 extension TabBarController: TabBarControllerProtocol {
     
-    func configureComponents() {
-        var controllers = [UIViewController]()
-        
-        let homeId = Home.StoryboardIdentifiers.home
-        
-        if let homeNc = UIStoryboard(name: homeId, bundle: nil).instantiateInitialViewController() as? UINavigationController {
-            controllers.append(homeNc)
+    func configureCoontrollers(vcIds: [String]) {
+        viewControllers = vcIds.compactMap {
+            UIStoryboard(name: $0, bundle: nil).instantiateInitialViewController() as? UINavigationController
         }
-        
-        let searchId = Search.StoryboardIdentifiers.search
-        
-        if let searchNc = UIStoryboard(name: searchId, bundle: nil).instantiateInitialViewController() as? UINavigationController {
-            controllers.append(searchNc)
-        }
-        
-        viewControllers = controllers
     }
 }

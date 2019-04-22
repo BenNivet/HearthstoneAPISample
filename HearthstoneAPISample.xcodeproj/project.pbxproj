@@ -63,6 +63,11 @@
 		19FDDB27226DE0C6006C2F27 /* CardsGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB1D226DE0C6006C2F27 /* CardsGalleryPresenter.swift */; };
 		19FDDB2B226E3F21006C2F27 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB2A226E3F21006C2F27 /* DesignableButton.swift */; };
 		19FDDB2E226E4600006C2F27 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */; };
+		19FDDB36226E62E2006C2F27 /* TabBarPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB33226E62E2006C2F27 /* TabBarPresenterTests.swift */; };
+		19FDDB37226E62E2006C2F27 /* TabBarViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB34226E62E2006C2F27 /* TabBarViewMock.swift */; };
+		19FDDB51226E6622006C2F27 /* SearchViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB4E226E6622006C2F27 /* SearchViewMock.swift */; };
+		19FDDB52226E6622006C2F27 /* SearchManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB4F226E6622006C2F27 /* SearchManagerMock.swift */; };
+		19FDDB53226E6622006C2F27 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB50226E6622006C2F27 /* SearchPresenterTests.swift */; };
 		B31E59B472BFB01DCFD53DC8 /* Pods_HearthstoneAPISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5058B887435B427B302832 /* Pods_HearthstoneAPISample.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +143,11 @@
 		19FDDB1D226DE0C6006C2F27 /* CardsGalleryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryPresenter.swift; sourceTree = "<group>"; };
 		19FDDB2A226E3F21006C2F27 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		19FDDB33226E62E2006C2F27 /* TabBarPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenterTests.swift; sourceTree = "<group>"; };
+		19FDDB34226E62E2006C2F27 /* TabBarViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewMock.swift; sourceTree = "<group>"; };
+		19FDDB4E226E6622006C2F27 /* SearchViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewMock.swift; sourceTree = "<group>"; };
+		19FDDB4F226E6622006C2F27 /* SearchManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchManagerMock.swift; sourceTree = "<group>"; };
+		19FDDB50226E6622006C2F27 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 		760C6786D82E27AC072FE616 /* Pods-HearthstoneAPISample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneAPISample.release.xcconfig"; path = "Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample.release.xcconfig"; sourceTree = "<group>"; };
 		9A5058B887435B427B302832 /* Pods_HearthstoneAPISample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HearthstoneAPISample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDAE40128555CC756413843 /* Pods-HearthstoneAPISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneAPISample.debug.xcconfig"; path = "Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -305,8 +315,10 @@
 		198E566D2268E4D600B38CDD /* HearthstoneAPISampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				19FDDB31226E62E2006C2F27 /* TabBar */,
 				19C99EBE2268FC5E0023BE32 /* Home */,
 				1965970C226D12B600456E6C /* CardsGallery */,
+				19FDDB4D226E6622006C2F27 /* Search */,
 				19659715226DC32900456E6C /* CardsUtils.swift */,
 				19659713226D171400456E6C /* Errors.swift */,
 				198E56702268E4D600B38CDD /* Info.plist */,
@@ -318,9 +330,9 @@
 			isa = PBXGroup;
 			children = (
 				1965971C226DD16900456E6C /* TabBar */,
-				19FDDB28226E3660006C2F27 /* Common */,
-				19FDDB0E226DE0C6006C2F27 /* Home */,
-				19FDDB0D226DE032006C2F27 /* Search */,
+				19FDDB16226DE0C6006C2F27 /* CardsGallery */,
+				19FDDB0F226DE0C6006C2F27 /* Home */,
+				19FDDAFA226DDFEB006C2F27 /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -480,22 +492,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		19FDDB0D226DE032006C2F27 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				19FDDAFA226DDFEB006C2F27 /* Search */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		19FDDB0E226DE0C6006C2F27 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				19FDDB0F226DE0C6006C2F27 /* Home */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		19FDDB0F226DE0C6006C2F27 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,14 +532,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		19FDDB28226E3660006C2F27 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				19FDDB16226DE0C6006C2F27 /* CardsGallery */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		19FDDB29226E3F21006C2F27 /* DesignableButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +546,25 @@
 				19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		19FDDB31226E62E2006C2F27 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB34226E62E2006C2F27 /* TabBarViewMock.swift */,
+				19FDDB33226E62E2006C2F27 /* TabBarPresenterTests.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		19FDDB4D226E6622006C2F27 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB4E226E6622006C2F27 /* SearchViewMock.swift */,
+				19FDDB50226E6622006C2F27 /* SearchPresenterTests.swift */,
+				19FDDB4F226E6622006C2F27 /* SearchManagerMock.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		3BB6F06B73E83BCF31C7D713 /* Frameworks */ = {
@@ -799,9 +806,14 @@
 				19C99EC22268FC5E0023BE32 /* HomeViewMock.swift in Sources */,
 				19C99EC42268FC5E0023BE32 /* HomeManagerMock.swift in Sources */,
 				19C99EC32268FC5E0023BE32 /* HomePresenterTests.swift in Sources */,
+				19FDDB36226E62E2006C2F27 /* TabBarPresenterTests.swift in Sources */,
 				19659710226D12B600456E6C /* CardsGalleryViewMock.swift in Sources */,
+				19FDDB52226E6622006C2F27 /* SearchManagerMock.swift in Sources */,
 				19659712226D12B600456E6C /* CardsGalleryPresenterTests.swift in Sources */,
+				19FDDB37226E62E2006C2F27 /* TabBarViewMock.swift in Sources */,
 				19659716226DC32900456E6C /* CardsUtils.swift in Sources */,
+				19FDDB51226E6622006C2F27 /* SearchViewMock.swift in Sources */,
+				19FDDB53226E6622006C2F27 /* SearchPresenterTests.swift in Sources */,
 				19659711226D12B600456E6C /* CardsGalleryManagerMock.swift in Sources */,
 				19659714226D171400456E6C /* Errors.swift in Sources */,
 			);

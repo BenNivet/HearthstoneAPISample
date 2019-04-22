@@ -13,6 +13,7 @@ class CardUtils {
     class func constructCard(playerClass: String) -> Card {
         let card = Card()
         card.playerClass = playerClass
+        card.img = ""
         
         return card
     }

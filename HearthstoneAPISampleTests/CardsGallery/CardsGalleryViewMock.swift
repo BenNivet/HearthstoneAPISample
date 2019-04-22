@@ -11,7 +11,9 @@ import UIKit
 class CardsGalleryViewMock: UIViewController {
     
 	var registerCollectionCellCalled = false
+    var configureResultsLabelCalled = false
     var reloadCalled = false
+    var hudShow = true
 }
 
 // MARK: - CardsGalleryViewControllerProtocol
@@ -19,6 +21,11 @@ extension CardsGalleryViewMock: CardsGalleryViewControllerProtocol {
     
     func registerCollectionCell(for identifier: String) {
         registerCollectionCellCalled = true
+    }
+    
+    func configureResultsLabel(show: Bool) {
+        configureResultsLabelCalled = true
+        hudShow = show
     }
     
     func reload() {

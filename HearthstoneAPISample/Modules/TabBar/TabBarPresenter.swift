@@ -23,6 +23,9 @@ class TabBarPresenter: NSObject {
 extension TabBarPresenter: TabBarPresenterProtocol {
 
     func viewDidLoad() {
-        view?.configureComponents()
+        let homeId = Home.StoryboardIdentifiers.home
+        let searchId = Search.StoryboardIdentifiers.search
+        
+        view?.configureCoontrollers(vcIds: [homeId, searchId])
     }
 }

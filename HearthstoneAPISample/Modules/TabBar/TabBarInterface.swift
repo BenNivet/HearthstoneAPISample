@@ -11,10 +11,6 @@ struct TabBar {
     struct Constants {
         static let tableName = "TabBar"
     }
-    
-    struct SegueIdentifiers {
-        
-    }
 }
 
 protocol TabBarPresenterProtocol: class {
@@ -22,5 +18,5 @@ protocol TabBarPresenterProtocol: class {
 }
 
 protocol TabBarControllerProtocol: class {
-    func configureComponents()
+    func configureCoontrollers(vcIds: [String])
 }

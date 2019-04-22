@@ -30,6 +30,8 @@ class CardsGalleryPresenterTests: XCTestCase {
         
         XCTAssertTrue(view.registerCollectionCellCalled)
         XCTAssertTrue(manager.cardsCalled)
+        XCTAssertTrue(view.configureResultsLabelCalled)
+        XCTAssertTrue(view.hudShow)
         XCTAssertTrue((view.reloadCalled))
     }
     
@@ -39,6 +41,8 @@ class CardsGalleryPresenterTests: XCTestCase {
         
         XCTAssertTrue(view.registerCollectionCellCalled)
         XCTAssertTrue(manager.cardsCalled)
+        XCTAssertTrue(view.configureResultsLabelCalled)
+        XCTAssertFalse(view.hudShow)
         XCTAssertTrue((view.reloadCalled))
     }
 }
