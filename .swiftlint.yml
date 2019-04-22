@@ -1,0 +1,49 @@
+disabled_rules:
+  - superfluous_disable_command
+  - trailing_whitespace
+  - statement_position
+  - trailing_newline
+  - function_body_length
+  # - file_length
+  - type_body_length
+  - variable_name
+  # - shorthand_operator
+  # - type_name
+  - empty_enum_arguments
+  
+cyclomatic_complexity:
+    warning: 15
+
+opt_in_rules:
+  - empty_count
+  # - force_unwrapping
+
+empty_count: warning
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+type_name:
+    min_length: 3
+    max_length: 50
+
+nesting:
+  type_level:
+    warning: 2
+  statement_level:
+    warning: 10
+
+line_length:
+    warning: 300
+    error: 400
+
+file_length:
+  warning: 1500
+  error: 2000
+
+function_parameter_count: 
+  warning: 6
+  error: 10
+
+excluded:
+  - Pods/

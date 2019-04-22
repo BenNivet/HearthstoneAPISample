@@ -1,0 +1,6 @@
+framework module Pods_HearthstoneAPISample {
+  umbrella header "Pods-HearthstoneAPISample-umbrella.h"
+
+  export *
+  module * { export * }
+}

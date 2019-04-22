@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		196596D5226BA9EC00456E6C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D4226BA9EC00456E6C /* Theme.swift */; };
+		196596D7226BAB8100456E6C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D6226BAB8100456E6C /* UIColor+Hex.swift */; };
+		196596F4226CA55300456E6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196596F3226CA55300456E6C /* Localizable.strings */; };
+		196596F8226CAB6F00456E6C /* ClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196596F6226CAB6E00456E6C /* ClassTableViewCell.xib */; };
+		196596F9226CAB6F00456E6C /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596F7226CAB6E00456E6C /* ClassTableViewCell.swift */; };
+		196596FC226CAF0B00456E6C /* ClassCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596FB226CAF0B00456E6C /* ClassCards.swift */; };
+		19659702226CC9FA00456E6C /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19659700226CC9FA00456E6C /* CardCollectionViewCell.xib */; };
+		19659703226CC9FA00456E6C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659701226CC9FA00456E6C /* CardCollectionViewCell.swift */; };
+		19659706226CCC8100456E6C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659705226CCC8100456E6C /* Logger.swift */; };
+		19659709226D0A2000456E6C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659708226D0A2000456E6C /* Loader.swift */; };
+		19659710226D12B600456E6C /* CardsGalleryViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965970D226D12B600456E6C /* CardsGalleryViewMock.swift */; };
+		19659711226D12B600456E6C /* CardsGalleryManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965970E226D12B600456E6C /* CardsGalleryManagerMock.swift */; };
+		19659712226D12B600456E6C /* CardsGalleryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965970F226D12B600456E6C /* CardsGalleryPresenterTests.swift */; };
+		19659714226D171400456E6C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659713226D171400456E6C /* Errors.swift */; };
+		19659716226DC32900456E6C /* CardsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659715226DC32900456E6C /* CardsUtils.swift */; };
+		19659719226DC9FB00456E6C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659718226DC9FB00456E6C /* Session.swift */; };
+		19659727226DD16900456E6C /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965971D226DD16900456E6C /* TabBarPresenter.swift */; };
+		19659728226DD16900456E6C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1965971F226DD16900456E6C /* TabBar.storyboard */; };
+		1965972C226DD16900456E6C /* TabBarInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659724226DD16900456E6C /* TabBarInterface.swift */; };
+		1965972E226DD16900456E6C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19659726226DD16900456E6C /* TabBarController.swift */; };
+		198E56572268E4D500B38CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E56562268E4D500B38CDD /* AppDelegate.swift */; };
+		198E565F2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 198E565D2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodeld */; };
+		198E56612268E4D600B38CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198E56602268E4D600B38CDD /* Assets.xcassets */; };
+		19C99EB72268FB420023BE32 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EB32268FB420023BE32 /* String+Localized.swift */; };
+		19C99EC22268FC5E0023BE32 /* HomeViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EBF2268FC5E0023BE32 /* HomeViewMock.swift */; };
+		19C99EC32268FC5E0023BE32 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EC02268FC5E0023BE32 /* HomePresenterTests.swift */; };
+		19C99EC42268FC5E0023BE32 /* HomeManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EC12268FC5E0023BE32 /* HomeManagerMock.swift */; };
+		19C99EC7226B063F0023BE32 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EC6226B063F0023BE32 /* WebAPI.swift */; };
+		19C99ED5226B0DEE0023BE32 /* CardsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99ED1226B0DEE0023BE32 /* CardsProvider.swift */; };
+		19C99ED6226B0DEE0023BE32 /* CardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99ED2226B0DEE0023BE32 /* CardsRouter.swift */; };
+		19C99ED7226B0DEE0023BE32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99ED4226B0DEE0023BE32 /* Card.swift */; };
+		19C99ED9226B125B0023BE32 /* URLRequest+Adapt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99ED8226B125B0023BE32 /* URLRequest+Adapt.swift */; };
+		19C99EDB226B17880023BE32 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EDA226B17880023BE32 /* ServiceProvider.swift */; };
+		19C99EE1226B408F0023BE32 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EE0226B408F0023BE32 /* Cards.swift */; };
+		19C99EEB226B45B50023BE32 /* LoadableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EEA226B45B40023BE32 /* LoadableProtocol.swift */; };
+		19C99EF5226B6A900023BE32 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EF4226B6A900023BE32 /* UIView+Xib.swift */; };
+		19C99EF9226B6BC80023BE32 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EF8226B6BC80023BE32 /* DesignableView.swift */; };
+		19C99EFE226B6C7E0023BE32 /* SetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C99EFC226B6C7D0023BE32 /* SetView.swift */; };
+		19C99EFF226B6C7E0023BE32 /* SetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C99EFD226B6C7D0023BE32 /* SetView.xib */; };
+		19FDDB05226DDFEB006C2F27 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDAFB226DDFEB006C2F27 /* SearchViewController.swift */; };
+		19FDDB06226DDFEB006C2F27 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FDDAFD226DDFEB006C2F27 /* Search.storyboard */; };
+		19FDDB0A226DDFEB006C2F27 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB02226DDFEB006C2F27 /* SearchPresenter.swift */; };
+		19FDDB0B226DDFEB006C2F27 /* SearchInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB03226DDFEB006C2F27 /* SearchInterface.swift */; };
+		19FDDB0C226DDFEB006C2F27 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB04226DDFEB006C2F27 /* SearchManager.swift */; };
+		19FDDB1E226DE0C6006C2F27 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FDDB11226DE0C6006C2F27 /* Home.storyboard */; };
+		19FDDB1F226DE0C6006C2F27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB12226DE0C6006C2F27 /* HomeViewController.swift */; };
+		19FDDB20226DE0C6006C2F27 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB13226DE0C6006C2F27 /* HomePresenter.swift */; };
+		19FDDB21226DE0C6006C2F27 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB14226DE0C6006C2F27 /* HomeManager.swift */; };
+		19FDDB22226DE0C6006C2F27 /* HomeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB15226DE0C6006C2F27 /* HomeInterface.swift */; };
+		19FDDB23226DE0C6006C2F27 /* CardsGalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB17226DE0C6006C2F27 /* CardsGalleryManager.swift */; };
+		19FDDB24226DE0C6006C2F27 /* CardsGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FDDB19226DE0C6006C2F27 /* CardsGallery.storyboard */; };
+		19FDDB25226DE0C6006C2F27 /* CardsGalleryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB1A226DE0C6006C2F27 /* CardsGalleryInterface.swift */; };
+		19FDDB26226DE0C6006C2F27 /* CardsGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB1B226DE0C6006C2F27 /* CardsGalleryViewController.swift */; };
+		19FDDB27226DE0C6006C2F27 /* CardsGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB1D226DE0C6006C2F27 /* CardsGalleryPresenter.swift */; };
+		19FDDB2B226E3F21006C2F27 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB2A226E3F21006C2F27 /* DesignableButton.swift */; };
+		19FDDB2E226E4600006C2F27 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */; };
+		B31E59B472BFB01DCFD53DC8 /* Pods_HearthstoneAPISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5058B887435B427B302832 /* Pods_HearthstoneAPISample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		198E566B2268E4D600B38CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 198E564B2268E4D500B38CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 198E56522268E4D500B38CDD;
+			remoteInfo = HearthstoneAPISample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196596D4226BA9EC00456E6C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		196596D6226BAB8100456E6C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		196596F3226CA55300456E6C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		196596F6226CAB6E00456E6C /* ClassTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassTableViewCell.xib; sourceTree = "<group>"; };
+		196596F7226CAB6E00456E6C /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		196596FB226CAF0B00456E6C /* ClassCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCards.swift; sourceTree = "<group>"; };
+		19659700226CC9FA00456E6C /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		19659701226CC9FA00456E6C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		19659705226CCC8100456E6C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		19659708226D0A2000456E6C /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		1965970D226D12B600456E6C /* CardsGalleryViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryViewMock.swift; sourceTree = "<group>"; };
+		1965970E226D12B600456E6C /* CardsGalleryManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryManagerMock.swift; sourceTree = "<group>"; };
+		1965970F226D12B600456E6C /* CardsGalleryPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryPresenterTests.swift; sourceTree = "<group>"; };
+		19659713226D171400456E6C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		19659715226DC32900456E6C /* CardsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUtils.swift; sourceTree = "<group>"; };
+		19659718226DC9FB00456E6C /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1965971D226DD16900456E6C /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		1965971F226DD16900456E6C /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		19659724226DD16900456E6C /* TabBarInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarInterface.swift; sourceTree = "<group>"; };
+		19659726226DD16900456E6C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		198E56532268E4D500B38CDD /* HearthstoneAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearthstoneAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		198E56562268E4D500B38CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		198E565E2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HearthstoneAPISample.xcdatamodel; sourceTree = "<group>"; };
+		198E56602268E4D600B38CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		198E56652268E4D600B38CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198E566A2268E4D600B38CDD /* HearthstoneAPISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HearthstoneAPISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		198E56702268E4D600B38CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C99EB32268FB420023BE32 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		19C99EBF2268FC5E0023BE32 /* HomeViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewMock.swift; sourceTree = "<group>"; };
+		19C99EC02268FC5E0023BE32 /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		19C99EC12268FC5E0023BE32 /* HomeManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManagerMock.swift; sourceTree = "<group>"; };
+		19C99EC6226B063F0023BE32 /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		19C99ED1226B0DEE0023BE32 /* CardsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsProvider.swift; sourceTree = "<group>"; };
+		19C99ED2226B0DEE0023BE32 /* CardsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRouter.swift; sourceTree = "<group>"; };
+		19C99ED4226B0DEE0023BE32 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		19C99ED8226B125B0023BE32 /* URLRequest+Adapt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Adapt.swift"; sourceTree = "<group>"; };
+		19C99EDA226B17880023BE32 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		19C99EE0226B408F0023BE32 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		19C99EEA226B45B40023BE32 /* LoadableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableProtocol.swift; sourceTree = "<group>"; };
+		19C99EEC226B46D50023BE32 /* HearthstoneAPISample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HearthstoneAPISample-Bridging-Header.h"; sourceTree = "<group>"; };
+		19C99EF4226B6A900023BE32 /* UIView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		19C99EF8226B6BC80023BE32 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		19C99EFC226B6C7D0023BE32 /* SetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetView.swift; sourceTree = "<group>"; };
+		19C99EFD226B6C7D0023BE32 /* SetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetView.xib; sourceTree = "<group>"; };
+		19FDDAFB226DDFEB006C2F27 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		19FDDAFD226DDFEB006C2F27 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		19FDDB02226DDFEB006C2F27 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		19FDDB03226DDFEB006C2F27 /* SearchInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInterface.swift; sourceTree = "<group>"; };
+		19FDDB04226DDFEB006C2F27 /* SearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		19FDDB11226DE0C6006C2F27 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		19FDDB12226DE0C6006C2F27 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		19FDDB13226DE0C6006C2F27 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		19FDDB14226DE0C6006C2F27 /* HomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		19FDDB15226DE0C6006C2F27 /* HomeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInterface.swift; sourceTree = "<group>"; };
+		19FDDB17226DE0C6006C2F27 /* CardsGalleryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryManager.swift; sourceTree = "<group>"; };
+		19FDDB19226DE0C6006C2F27 /* CardsGallery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardsGallery.storyboard; sourceTree = "<group>"; };
+		19FDDB1A226DE0C6006C2F27 /* CardsGalleryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryInterface.swift; sourceTree = "<group>"; };
+		19FDDB1B226DE0C6006C2F27 /* CardsGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryViewController.swift; sourceTree = "<group>"; };
+		19FDDB1D226DE0C6006C2F27 /* CardsGalleryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsGalleryPresenter.swift; sourceTree = "<group>"; };
+		19FDDB2A226E3F21006C2F27 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		760C6786D82E27AC072FE616 /* Pods-HearthstoneAPISample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneAPISample.release.xcconfig"; path = "Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample.release.xcconfig"; sourceTree = "<group>"; };
+		9A5058B887435B427B302832 /* Pods_HearthstoneAPISample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HearthstoneAPISample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDAE40128555CC756413843 /* Pods-HearthstoneAPISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HearthstoneAPISample.debug.xcconfig"; path = "Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		198E56502268E4D500B38CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E59B472BFB01DCFD53DC8 /* Pods_HearthstoneAPISample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198E56672268E4D600B38CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088939C0162750FC13062A0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDAE40128555CC756413843 /* Pods-HearthstoneAPISample.debug.xcconfig */,
+				760C6786D82E27AC072FE616 /* Pods-HearthstoneAPISample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		196596D3226BA9D300456E6C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				196596D4226BA9EC00456E6C /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		196596F2226CA55300456E6C /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				196596F3226CA55300456E6C /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		196596F5226CAB6E00456E6C /* ClassTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				196596F6226CAB6E00456E6C /* ClassTableViewCell.xib */,
+				196596F7226CAB6E00456E6C /* ClassTableViewCell.swift */,
+			);
+			path = ClassTableViewCell;
+			sourceTree = "<group>";
+		};
+		196596FA226CAEEA00456E6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				196596FB226CAF0B00456E6C /* ClassCards.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		196596FF226CC9FA00456E6C /* CardCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				19659700226CC9FA00456E6C /* CardCollectionViewCell.xib */,
+				19659701226CC9FA00456E6C /* CardCollectionViewCell.swift */,
+			);
+			path = CardCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		19659704226CCC8100456E6C /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				19659705226CCC8100456E6C /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		19659707226D0A0B00456E6C /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				19659708226D0A2000456E6C /* Loader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		1965970C226D12B600456E6C /* CardsGallery */ = {
+			isa = PBXGroup;
+			children = (
+				1965970D226D12B600456E6C /* CardsGalleryViewMock.swift */,
+				1965970F226D12B600456E6C /* CardsGalleryPresenterTests.swift */,
+				1965970E226D12B600456E6C /* CardsGalleryManagerMock.swift */,
+			);
+			path = CardsGallery;
+			sourceTree = "<group>";
+		};
+		19659717226DC9FB00456E6C /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				19659718226DC9FB00456E6C /* Session.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		1965971C226DD16900456E6C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				19659724226DD16900456E6C /* TabBarInterface.swift */,
+				1965971D226DD16900456E6C /* TabBarPresenter.swift */,
+				19659726226DD16900456E6C /* TabBarController.swift */,
+				1965971E226DD16900456E6C /* Resources */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1965971E226DD16900456E6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1965971F226DD16900456E6C /* TabBar.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		198E564A2268E4D500B38CDD = {
+			isa = PBXGroup;
+			children = (
+				198E56552268E4D500B38CDD /* HearthstoneAPISample */,
+				198E566D2268E4D600B38CDD /* HearthstoneAPISampleTests */,
+				198E56542268E4D500B38CDD /* Products */,
+				088939C0162750FC13062A0B /* Pods */,
+				3BB6F06B73E83BCF31C7D713 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		198E56542268E4D500B38CDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				198E56532268E4D500B38CDD /* HearthstoneAPISample.app */,
+				198E566A2268E4D600B38CDD /* HearthstoneAPISampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		198E56552268E4D500B38CDD /* HearthstoneAPISample */ = {
+			isa = PBXGroup;
+			children = (
+				198E56562268E4D500B38CDD /* AppDelegate.swift */,
+				19C99EAF2268FB420023BE32 /* Common */,
+				19C99E992268F9440023BE32 /* Modules */,
+				19C99EC5226B05E80023BE32 /* WebServices */,
+				198E56602268E4D600B38CDD /* Assets.xcassets */,
+				196596F2226CA55300456E6C /* Localizables */,
+				19C99EEC226B46D50023BE32 /* HearthstoneAPISample-Bridging-Header.h */,
+				198E56652268E4D600B38CDD /* Info.plist */,
+				198E565D2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodeld */,
+			);
+			path = HearthstoneAPISample;
+			sourceTree = "<group>";
+		};
+		198E566D2268E4D600B38CDD /* HearthstoneAPISampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EBE2268FC5E0023BE32 /* Home */,
+				1965970C226D12B600456E6C /* CardsGallery */,
+				19659715226DC32900456E6C /* CardsUtils.swift */,
+				19659713226D171400456E6C /* Errors.swift */,
+				198E56702268E4D600B38CDD /* Info.plist */,
+			);
+			path = HearthstoneAPISampleTests;
+			sourceTree = "<group>";
+		};
+		19C99E992268F9440023BE32 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1965971C226DD16900456E6C /* TabBar */,
+				19FDDB28226E3660006C2F27 /* Common */,
+				19FDDB0E226DE0C6006C2F27 /* Home */,
+				19FDDB0D226DE032006C2F27 /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		19C99EAF2268FB420023BE32 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				196596FA226CAEEA00456E6C /* Models */,
+				19C99EE2226B45620023BE32 /* Components */,
+				19C99EB02268FB420023BE32 /* Others */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19C99EB02268FB420023BE32 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				19659717226DC9FB00456E6C /* Session */,
+				19659704226CCC8100456E6C /* Logger */,
+				19C99EE9226B45B40023BE32 /* Protocols */,
+				19C99EB12268FB420023BE32 /* Extensions */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		19C99EB12268FB420023BE32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EF3226B6A900023BE32 /* UIKit */,
+				19C99EB22268FB420023BE32 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19C99EB22268FB420023BE32 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EB32268FB420023BE32 /* String+Localized.swift */,
+				19C99ED8226B125B0023BE32 /* URLRequest+Adapt.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		19C99EBE2268FC5E0023BE32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EBF2268FC5E0023BE32 /* HomeViewMock.swift */,
+				19C99EC02268FC5E0023BE32 /* HomePresenterTests.swift */,
+				19C99EC12268FC5E0023BE32 /* HomeManagerMock.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		19C99EC5226B05E80023BE32 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EC6226B063F0023BE32 /* WebAPI.swift */,
+				19C99EDA226B17880023BE32 /* ServiceProvider.swift */,
+				19C99ED0226B0DEE0023BE32 /* Cards */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		19C99ED0226B0DEE0023BE32 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				19C99ED1226B0DEE0023BE32 /* CardsProvider.swift */,
+				19C99ED2226B0DEE0023BE32 /* CardsRouter.swift */,
+				19C99ED3226B0DEE0023BE32 /* Model */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		19C99ED3226B0DEE0023BE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EE0226B408F0023BE32 /* Cards.swift */,
+				19C99ED4226B0DEE0023BE32 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19C99EE2226B45620023BE32 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				19659707226D0A0B00456E6C /* Loader */,
+				196596D3226BA9D300456E6C /* Theme */,
+				19C99EF6226B6BC80023BE32 /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		19C99EE9226B45B40023BE32 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EEA226B45B40023BE32 /* LoadableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		19C99EF3226B6A900023BE32 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EF4226B6A900023BE32 /* UIView+Xib.swift */,
+				196596D6226BAB8100456E6C /* UIColor+Hex.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		19C99EF6226B6BC80023BE32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				196596FF226CC9FA00456E6C /* CardCollectionViewCell */,
+				196596F5226CAB6E00456E6C /* ClassTableViewCell */,
+				19C99EFB226B6C7D0023BE32 /* SetView */,
+				19C99EF7226B6BC80023BE32 /* DesignableView */,
+				19FDDB29226E3F21006C2F27 /* DesignableButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19C99EF7226B6BC80023BE32 /* DesignableView */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EF8226B6BC80023BE32 /* DesignableView.swift */,
+			);
+			path = DesignableView;
+			sourceTree = "<group>";
+		};
+		19C99EFB226B6C7D0023BE32 /* SetView */ = {
+			isa = PBXGroup;
+			children = (
+				19C99EFD226B6C7D0023BE32 /* SetView.xib */,
+				19C99EFC226B6C7D0023BE32 /* SetView.swift */,
+			);
+			path = SetView;
+			sourceTree = "<group>";
+		};
+		19FDDAFA226DDFEB006C2F27 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB03226DDFEB006C2F27 /* SearchInterface.swift */,
+				19FDDB04226DDFEB006C2F27 /* SearchManager.swift */,
+				19FDDB02226DDFEB006C2F27 /* SearchPresenter.swift */,
+				19FDDAFB226DDFEB006C2F27 /* SearchViewController.swift */,
+				19FDDAFC226DDFEB006C2F27 /* Resources */,
+				19FDDB2C226E45D8006C2F27 /* Models */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		19FDDAFC226DDFEB006C2F27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDAFD226DDFEB006C2F27 /* Search.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19FDDB0D226DE032006C2F27 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDAFA226DDFEB006C2F27 /* Search */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		19FDDB0E226DE0C6006C2F27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB0F226DE0C6006C2F27 /* Home */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		19FDDB0F226DE0C6006C2F27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB15226DE0C6006C2F27 /* HomeInterface.swift */,
+				19FDDB14226DE0C6006C2F27 /* HomeManager.swift */,
+				19FDDB13226DE0C6006C2F27 /* HomePresenter.swift */,
+				19FDDB12226DE0C6006C2F27 /* HomeViewController.swift */,
+				19FDDB10226DE0C6006C2F27 /* Resources */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		19FDDB10226DE0C6006C2F27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB11226DE0C6006C2F27 /* Home.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19FDDB16226DE0C6006C2F27 /* CardsGallery */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB1A226DE0C6006C2F27 /* CardsGalleryInterface.swift */,
+				19FDDB17226DE0C6006C2F27 /* CardsGalleryManager.swift */,
+				19FDDB1D226DE0C6006C2F27 /* CardsGalleryPresenter.swift */,
+				19FDDB1B226DE0C6006C2F27 /* CardsGalleryViewController.swift */,
+				19FDDB18226DE0C6006C2F27 /* Resources */,
+			);
+			path = CardsGallery;
+			sourceTree = "<group>";
+		};
+		19FDDB18226DE0C6006C2F27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB19226DE0C6006C2F27 /* CardsGallery.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19FDDB28226E3660006C2F27 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB16226DE0C6006C2F27 /* CardsGallery */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19FDDB29226E3F21006C2F27 /* DesignableButton */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB2A226E3F21006C2F27 /* DesignableButton.swift */,
+			);
+			path = DesignableButton;
+			sourceTree = "<group>";
+		};
+		19FDDB2C226E45D8006C2F27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19FDDB2D226E4600006C2F27 /* SearchViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BB6F06B73E83BCF31C7D713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5058B887435B427B302832 /* Pods_HearthstoneAPISample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		198E56522268E4D500B38CDD /* HearthstoneAPISample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 198E56732268E4D600B38CDD /* Build configuration list for PBXNativeTarget "HearthstoneAPISample" */;
+			buildPhases = (
+				C179EFE24A707E9A16171E13 /* [CP] Check Pods Manifest.lock */,
+				198E564F2268E4D500B38CDD /* Sources */,
+				198E56502268E4D500B38CDD /* Frameworks */,
+				198E56512268E4D500B38CDD /* Resources */,
+				07059B239B8490E1D12312E6 /* [CP] Embed Pods Frameworks */,
+				19C99E982268F56E0023BE32 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HearthstoneAPISample;
+			productName = HearthstoneAPISample;
+			productReference = 198E56532268E4D500B38CDD /* HearthstoneAPISample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		198E56692268E4D600B38CDD /* HearthstoneAPISampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 198E56762268E4D600B38CDD /* Build configuration list for PBXNativeTarget "HearthstoneAPISampleTests" */;
+			buildPhases = (
+				198E56662268E4D600B38CDD /* Sources */,
+				198E56672268E4D600B38CDD /* Frameworks */,
+				198E56682268E4D600B38CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				198E566C2268E4D600B38CDD /* PBXTargetDependency */,
+			);
+			name = HearthstoneAPISampleTests;
+			productName = HearthstoneAPISampleTests;
+			productReference = 198E566A2268E4D600B38CDD /* HearthstoneAPISampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		198E564B2268E4D500B38CDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.Nivet;
+				TargetAttributes = {
+					198E56522268E4D500B38CDD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					198E56692268E4D600B38CDD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 198E56522268E4D500B38CDD;
+					};
+				};
+			};
+			buildConfigurationList = 198E564E2268E4D500B38CDD /* Build configuration list for PBXProject "HearthstoneAPISample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 198E564A2268E4D500B38CDD;
+			productRefGroup = 198E56542268E4D500B38CDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				198E56522268E4D500B38CDD /* HearthstoneAPISample */,
+				198E56692268E4D600B38CDD /* HearthstoneAPISampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		198E56512268E4D500B38CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19659702226CC9FA00456E6C /* CardCollectionViewCell.xib in Resources */,
+				198E56612268E4D600B38CDD /* Assets.xcassets in Resources */,
+				196596F4226CA55300456E6C /* Localizable.strings in Resources */,
+				19FDDB06226DDFEB006C2F27 /* Search.storyboard in Resources */,
+				19659728226DD16900456E6C /* TabBar.storyboard in Resources */,
+				19FDDB24226DE0C6006C2F27 /* CardsGallery.storyboard in Resources */,
+				19C99EFF226B6C7E0023BE32 /* SetView.xib in Resources */,
+				196596F8226CAB6F00456E6C /* ClassTableViewCell.xib in Resources */,
+				19FDDB1E226DE0C6006C2F27 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198E56682268E4D600B38CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07059B239B8490E1D12312E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HearthstoneAPISample/Pods-HearthstoneAPISample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C99E982268F56E0023BE32 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n";
+		};
+		C179EFE24A707E9A16171E13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HearthstoneAPISample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		198E564F2268E4D500B38CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19659706226CCC8100456E6C /* Logger.swift in Sources */,
+				19C99ED7226B0DEE0023BE32 /* Card.swift in Sources */,
+				19C99EB72268FB420023BE32 /* String+Localized.swift in Sources */,
+				19FDDB27226DE0C6006C2F27 /* CardsGalleryPresenter.swift in Sources */,
+				1965972C226DD16900456E6C /* TabBarInterface.swift in Sources */,
+				196596FC226CAF0B00456E6C /* ClassCards.swift in Sources */,
+				19C99EE1226B408F0023BE32 /* Cards.swift in Sources */,
+				19C99EF5226B6A900023BE32 /* UIView+Xib.swift in Sources */,
+				1965972E226DD16900456E6C /* TabBarController.swift in Sources */,
+				196596D7226BAB8100456E6C /* UIColor+Hex.swift in Sources */,
+				196596D5226BA9EC00456E6C /* Theme.swift in Sources */,
+				198E565F2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodeld in Sources */,
+				19FDDB20226DE0C6006C2F27 /* HomePresenter.swift in Sources */,
+				19FDDB22226DE0C6006C2F27 /* HomeInterface.swift in Sources */,
+				19FDDB0C226DDFEB006C2F27 /* SearchManager.swift in Sources */,
+				19C99EF9226B6BC80023BE32 /* DesignableView.swift in Sources */,
+				196596F9226CAB6F00456E6C /* ClassTableViewCell.swift in Sources */,
+				19FDDB23226DE0C6006C2F27 /* CardsGalleryManager.swift in Sources */,
+				19FDDB2E226E4600006C2F27 /* SearchViewModel.swift in Sources */,
+				19FDDB0B226DDFEB006C2F27 /* SearchInterface.swift in Sources */,
+				19FDDB21226DE0C6006C2F27 /* HomeManager.swift in Sources */,
+				198E56572268E4D500B38CDD /* AppDelegate.swift in Sources */,
+				19FDDB26226DE0C6006C2F27 /* CardsGalleryViewController.swift in Sources */,
+				19C99EC7226B063F0023BE32 /* WebAPI.swift in Sources */,
+				19FDDB0A226DDFEB006C2F27 /* SearchPresenter.swift in Sources */,
+				19C99ED6226B0DEE0023BE32 /* CardsRouter.swift in Sources */,
+				19659727226DD16900456E6C /* TabBarPresenter.swift in Sources */,
+				19C99EFE226B6C7E0023BE32 /* SetView.swift in Sources */,
+				19FDDB05226DDFEB006C2F27 /* SearchViewController.swift in Sources */,
+				19C99EEB226B45B50023BE32 /* LoadableProtocol.swift in Sources */,
+				19C99EDB226B17880023BE32 /* ServiceProvider.swift in Sources */,
+				19C99ED5226B0DEE0023BE32 /* CardsProvider.swift in Sources */,
+				19C99ED9226B125B0023BE32 /* URLRequest+Adapt.swift in Sources */,
+				19659719226DC9FB00456E6C /* Session.swift in Sources */,
+				19659703226CC9FA00456E6C /* CardCollectionViewCell.swift in Sources */,
+				19FDDB1F226DE0C6006C2F27 /* HomeViewController.swift in Sources */,
+				19FDDB2B226E3F21006C2F27 /* DesignableButton.swift in Sources */,
+				19659709226D0A2000456E6C /* Loader.swift in Sources */,
+				19FDDB25226DE0C6006C2F27 /* CardsGalleryInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198E56662268E4D600B38CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C99EC22268FC5E0023BE32 /* HomeViewMock.swift in Sources */,
+				19C99EC42268FC5E0023BE32 /* HomeManagerMock.swift in Sources */,
+				19C99EC32268FC5E0023BE32 /* HomePresenterTests.swift in Sources */,
+				19659710226D12B600456E6C /* CardsGalleryViewMock.swift in Sources */,
+				19659712226D12B600456E6C /* CardsGalleryPresenterTests.swift in Sources */,
+				19659716226DC32900456E6C /* CardsUtils.swift in Sources */,
+				19659711226D12B600456E6C /* CardsGalleryManagerMock.swift in Sources */,
+				19659714226D171400456E6C /* Errors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		198E566C2268E4D600B38CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 198E56522268E4D500B38CDD /* HearthstoneAPISample */;
+			targetProxy = 198E566B2268E4D600B38CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		198E56712268E4D600B38CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		198E56722268E4D600B38CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		198E56742268E4D600B38CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDAE40128555CC756413843 /* Pods-HearthstoneAPISample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HearthstoneAPISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nivet.HearthstoneAPISample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HearthstoneAPISample/HearthstoneAPISample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		198E56752268E4D600B38CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760C6786D82E27AC072FE616 /* Pods-HearthstoneAPISample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HearthstoneAPISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nivet.HearthstoneAPISample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HearthstoneAPISample/HearthstoneAPISample-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		198E56772268E4D600B38CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HearthstoneAPISampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nivet.HearthstoneAPISampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearthstoneAPISample.app/HearthstoneAPISample";
+			};
+			name = Debug;
+		};
+		198E56782268E4D600B38CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HearthstoneAPISampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nivet.HearthstoneAPISampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearthstoneAPISample.app/HearthstoneAPISample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		198E564E2268E4D500B38CDD /* Build configuration list for PBXProject "HearthstoneAPISample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198E56712268E4D600B38CDD /* Debug */,
+				198E56722268E4D600B38CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		198E56732268E4D600B38CDD /* Build configuration list for PBXNativeTarget "HearthstoneAPISample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198E56742268E4D600B38CDD /* Debug */,
+				198E56752268E4D600B38CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		198E56762268E4D600B38CDD /* Build configuration list for PBXNativeTarget "HearthstoneAPISampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198E56772268E4D600B38CDD /* Debug */,
+				198E56782268E4D600B38CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		198E565D2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				198E565E2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodel */,
+			);
+			currentVersion = 198E565E2268E4D500B38CDD /* HearthstoneAPISample.xcdatamodel */;
+			path = HearthstoneAPISample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 198E564B2268E4D500B38CDD /* Project object */;
+}

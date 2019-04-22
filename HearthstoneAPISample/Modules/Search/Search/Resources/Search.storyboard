@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8yW-9R-gB2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="Kp3-7c-Sfk">
+            <objects>
+                <viewController id="XDW-Jp-LzW" customClass="SearchViewController" customModule="HearthstoneAPISample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PRI-sf-chm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26u-1S-XWk">
+                                <rect key="frame" x="0.0" y="104" width="375" height="625"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bBv-9J-t75">
+                                        <rect key="frame" x="30" y="262.66666666666669" width="315" height="100"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5TC-UN-nuz">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7jN-o1-gv9"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="XDW-Jp-LzW" id="kCR-eK-rH8"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dus-dZ-ZcZ" customClass="DesignableButton" customModule="HearthstoneAPISample" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="315" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="t2f-JX-Dgv"/>
+                                                </constraints>
+                                                <state key="normal" title="Search"/>
+                                                <connections>
+                                                    <action selector="search" destination="XDW-Jp-LzW" eventType="touchUpInside" id="T3R-uM-EBU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bBv-9J-t75" firstAttribute="leading" secondItem="26u-1S-XWk" secondAttribute="leading" constant="30" id="Mff-xB-uKj"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBv-9J-t75" secondAttribute="trailing" constant="30" id="ent-xq-tut"/>
+                                    <constraint firstItem="bBv-9J-t75" firstAttribute="centerY" secondItem="26u-1S-XWk" secondAttribute="centerY" id="kgj-F8-cb2"/>
+                                    <constraint firstItem="bBv-9J-t75" firstAttribute="centerX" secondItem="26u-1S-XWk" secondAttribute="centerX" id="xiA-Sl-XGf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill a field to search your cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqW-zW-mT8">
+                                <rect key="frame" x="16" y="64" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C32-ef-ldm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="26u-1S-XWk" firstAttribute="leading" secondItem="5EY-QT-Oe2" secondAttribute="leading" id="5UG-WD-TZj"/>
+                            <constraint firstItem="OqW-zW-mT8" firstAttribute="leading" secondItem="5EY-QT-Oe2" secondAttribute="leading" constant="16" id="Pwh-bO-YGv"/>
+                            <constraint firstItem="26u-1S-XWk" firstAttribute="trailing" secondItem="5EY-QT-Oe2" secondAttribute="trailing" id="XL1-gQ-oWC"/>
+                            <constraint firstItem="5EY-QT-Oe2" firstAttribute="trailing" secondItem="OqW-zW-mT8" secondAttribute="trailing" constant="16" id="aqD-1b-PDm"/>
+                            <constraint firstItem="26u-1S-XWk" firstAttribute="top" secondItem="OqW-zW-mT8" secondAttribute="bottom" id="fKo-10-qZV"/>
+                            <constraint firstItem="OqW-zW-mT8" firstAttribute="top" secondItem="5EY-QT-Oe2" secondAttribute="top" constant="20" id="lcv-I9-7kj"/>
+                            <constraint firstItem="26u-1S-XWk" firstAttribute="bottom" secondItem="5EY-QT-Oe2" secondAttribute="bottom" id="tjc-aJ-nvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5EY-QT-Oe2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TcY-Jq-BfY"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="800" height="550"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="5TC-UN-nuz" id="FnN-2S-iMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7G-7Q-NZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="133.00492610837438"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="rjC-ti-uqs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8yW-9R-gB2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="searchIcon" id="Xjr-fd-zLy">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VnN-nr-sha">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XDW-Jp-LzW" kind="relationship" relationship="rootViewController" id="1uB-lb-zUB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEV-aK-gyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.400000000000006" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="searchIcon" width="33" height="33"/>
+    </resources>
+</document>

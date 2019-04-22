@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QRX-55-lPg">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose your set-->
+        <scene sceneID="Kp3-7c-Sfk">
+            <objects>
+                <viewController id="XDW-Jp-LzW" customClass="HomeViewController" customModule="HearthstoneAPISample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PRI-sf-chm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-Np-iBF">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XDW-Jp-LzW" id="xyR-DK-OdM"/>
+                                    <outlet property="delegate" destination="XDW-Jp-LzW" id="oY9-QJ-8jW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6iN-Np-iBF" firstAttribute="trailing" secondItem="5EY-QT-Oe2" secondAttribute="trailing" id="Awh-hD-f7U"/>
+                            <constraint firstItem="6iN-Np-iBF" firstAttribute="leading" secondItem="5EY-QT-Oe2" secondAttribute="leading" id="KSn-y5-hGt"/>
+                            <constraint firstItem="6iN-Np-iBF" firstAttribute="top" secondItem="5EY-QT-Oe2" secondAttribute="top" id="MsO-Hu-kZu"/>
+                            <constraint firstItem="5EY-QT-Oe2" firstAttribute="bottom" secondItem="6iN-Np-iBF" secondAttribute="bottom" id="ywt-4F-ev2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5EY-QT-Oe2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose your set" id="fn2-US-Fv7"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="800" height="550"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="6iN-Np-iBF" id="t43-hk-ahH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7G-7Q-NZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="133.00492610837438"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="zO9-lV-kGq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QRX-55-lPg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homeIcon" id="Idc-LB-sxt">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nn0-Xc-ZiE">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XDW-Jp-LzW" kind="relationship" relationship="rootViewController" id="mwI-m5-1CL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAd-XT-tqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.400000000000006" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeIcon" width="33" height="33"/>
+    </resources>
+</document>
