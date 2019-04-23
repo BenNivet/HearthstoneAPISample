@@ -35,6 +35,8 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(view.showLoaderCalled)
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertTrue(manager.saveCalled)
+        XCTAssertTrue(manager.prepareLoadingImageUrlCalled)
         XCTAssertTrue(view.reloadCalled)
         
         XCTAssertTrue(view.hideLoaderCalled)
@@ -52,6 +54,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(view.showLoaderCalled)
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertTrue(manager.saveCalled)
         XCTAssertTrue(manager.prepareLoadingImageUrlCalled)
         XCTAssertTrue(view.reloadCalled)
         
@@ -97,7 +100,7 @@ class HomePresenterTests: XCTestCase {
                                            cards: [CardUtils.constructCard(playerClass: "class1")])]
         presenter.selectedClass(at: 0)
         
-        XCTAssertTrue(manager.saveCalled)
+        XCTAssertTrue(manager.saveClassCardsCalled)
         XCTAssertTrue(view.performToGalleryCalled)
     }
     
@@ -106,7 +109,7 @@ class HomePresenterTests: XCTestCase {
                                            cards: [CardUtils.constructCard(playerClass: "class1")])]
         presenter.selectedClass(at: 4)
         
-        XCTAssertFalse(manager.saveCalled)
+        XCTAssertFalse(manager.saveClassCardsCalled)
         XCTAssertFalse(view.performToGalleryCalled)
     }
     

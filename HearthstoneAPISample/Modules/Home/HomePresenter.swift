@@ -37,6 +37,8 @@ extension HomePresenter: HomePresenterProtocol {
             self.view?.hideLoader()
             
             let allCards = (result?.basic ?? []) + (result?.classic ?? [])
+            self.manager.save(cards: allCards)
+            
             let allClass = Array(Set(allCards.map { $0.playerClass }))
             
             let cardsFiltered = allClass.map { (className) -> (String, [Card]) in (className ?? "", allCards.filter { $0.playerClass == className }) }
@@ -61,7 +63,7 @@ extension HomePresenter: HomePresenterProtocol {
     func selectedClass(at index: Int) {
         if let classCards = classCards,
             classCards.indices.contains(index) {
-            manager.save(cards: classCards[index].cards)
+            manager.saveClassCards(cards: classCards[index].cards)
             view?.performToGallery(with: classCards[index].cards)
         }
     }

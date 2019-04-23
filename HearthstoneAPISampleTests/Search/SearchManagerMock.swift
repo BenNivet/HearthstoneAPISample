@@ -10,6 +10,7 @@ import Foundation
 
 class SearchManagerMock {
     var getCardsCalled = false
+    var filterCardsCalled = false
     var saveCalled = false
     
     var success = true
@@ -27,6 +28,11 @@ extension SearchManagerMock: SearchManagerProtocol {
         } else {
             failure(error)
         }
+    }
+    
+    func filterCards(unfilteredCards: [Card]?) -> [Card]? {
+        filterCardsCalled = true
+        return cards
     }
     
     func save(cards: [Card]?) {

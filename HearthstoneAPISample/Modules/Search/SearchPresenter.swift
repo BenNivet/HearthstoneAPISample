@@ -31,7 +31,8 @@ extension SearchPresenter: SearchPresenterProtocol {
     }
     
     func search() {
-        if let name = searchViewModel.name {
+        if let name = searchViewModel.name?.components(separatedBy: " ").first?.lowercased() {
+            searchViewModel.name = name
             searchCards(name: name)
         }
     }
@@ -40,8 +41,9 @@ extension SearchPresenter: SearchPresenterProtocol {
         view?.showLoader()
         manager.getCards(by: name, success: { results in
             
-            self.manager.save(cards: results)
-            self.view?.performToGallery(with: results)
+            let cards = self.manager.filterCards(unfilteredCards: results)
+            self.manager.save(cards: cards)
+            self.view?.performToGallery(with: cards)
             
             self.view?.hideLoader()
         }, failure: { error in

@@ -65,3 +65,10 @@ public class Card: Mappable {
         imgGold <- map["imgGold"]
     }
 }
+
+extension Card: Equatable {
+    
+    public static func == (lhs: Card, rhs: Card) -> Bool {
+        return lhs.cardId == rhs.cardId
+    }
+}

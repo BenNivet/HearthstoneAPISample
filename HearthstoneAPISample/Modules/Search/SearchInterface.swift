@@ -30,5 +30,6 @@ protocol SearchViewControllerProtocol: LoadableProtocol {
 
 protocol SearchManagerProtocol: class {
     func getCards(by name: String, success: @escaping ([Card]?) -> Void, failure: @escaping (Error?) -> Void)
+    func filterCards(unfilteredCards: [Card]?) -> [Card]? 
     func save(cards: [Card]?)
 }

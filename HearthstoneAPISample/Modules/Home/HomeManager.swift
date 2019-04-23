@@ -10,6 +10,7 @@ import Foundation
 class HomeManager: HomeManagerProtocol {
     
     deinit {
+        Session.current?.appContext[Context.Home.cards]  = nil
         Session.current?.appContext[Context.Gallery.cards]  = nil
     }
     
@@ -17,8 +18,12 @@ class HomeManager: HomeManagerProtocol {
         CardsProvider().getAllCards(success: success, failure: failure)
     }
     
-    func save(cards: [Card]?) {
+    func saveClassCards(cards: [Card]?) {
         Session.current?.appContext[Context.Gallery.cards] = cards
+    }
+    
+    func save(cards: [Card]?) {
+        Session.current?.appContext[Context.Home.cards] = cards
     }
     
     func prepareLoadingImageUrl(urls: [String]?) {

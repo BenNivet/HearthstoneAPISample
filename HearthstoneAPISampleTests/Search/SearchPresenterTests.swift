@@ -36,6 +36,7 @@ class SearchPresenterTests: XCTestCase {
         presenter.search()
         
         XCTAssertFalse(manager.getCardsCalled)
+        XCTAssertFalse(manager.filterCardsCalled)
         XCTAssertFalse(manager.saveCalled)
         XCTAssertFalse(view.performToGalleryCalled)
     }
@@ -45,6 +46,7 @@ class SearchPresenterTests: XCTestCase {
         presenter.search()
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertTrue(manager.filterCardsCalled)
         XCTAssertTrue(manager.saveCalled)
         XCTAssertTrue(view.performToGalleryCalled)
     }
@@ -55,6 +57,7 @@ class SearchPresenterTests: XCTestCase {
         presenter.search()
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertFalse(manager.filterCardsCalled)
         XCTAssertFalse(manager.saveCalled)
         XCTAssertFalse(view.performToGalleryCalled)
     }
@@ -66,6 +69,7 @@ class SearchPresenterTests: XCTestCase {
         presenter.search()
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertFalse(manager.filterCardsCalled)
         XCTAssertFalse(manager.saveCalled)
         XCTAssertFalse(view.performToGalleryCalled)
     }

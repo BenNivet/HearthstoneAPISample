@@ -7,9 +7,10 @@
 
 import Foundation
 
-enum SetType {
-    case basic
-    case classic
+extension Context {
+    enum Home: Key, StringEnum {
+        case cards
+    }
 }
 
 struct Home {
@@ -41,6 +42,7 @@ protocol HomeViewControllerProtocol: LoadableProtocol {
 
 protocol HomeManagerProtocol: class {
     func getCards(success: @escaping (Cards?) -> Void, failure: @escaping (Error?) -> Void)
+    func saveClassCards(cards: [Card]?)
     func save(cards: [Card]?)
     func prepareLoadingImageUrl(urls: [String]?)
 }

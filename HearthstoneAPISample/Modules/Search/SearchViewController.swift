@@ -42,14 +42,17 @@ extension SearchViewController: SearchViewControllerProtocol {
         if let vc = UIStoryboard(name: galleryId, bundle: nil).instantiateInitialViewController() as? CardsGalleryViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
+        
+        updateView()
     }
     
     private func prepareToSearch() {
-        let viewModel = presenter.searchViewModel
-        
-        viewModel.name = nameTextField.text
-        
+        presenter.searchViewModel.name = nameTextField.text
         presenter.search()
+    }
+    
+    private func updateView() {
+        nameTextField.text = presenter.searchViewModel.name
     }
 }
 
