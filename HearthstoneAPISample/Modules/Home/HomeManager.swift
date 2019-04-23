@@ -20,4 +20,12 @@ class HomeManager: HomeManagerProtocol {
     func save(cards: [Card]?) {
         Session.current?.appContext[Context.Gallery.cards] = cards
     }
+    
+    func prepareLoadingImageUrl(urls: [String]) {
+        DispatchQueue.main.async {
+            urls.forEach {
+                ImagesManager.shared.getImage(urlString: $0, completion: nil)
+            }
+        }
+    }
 }

@@ -12,6 +12,7 @@ class HomeManagerMock {
     
     var getCardsCalled = false
     var saveCalled = false
+    var prepareLoadingImageUrlCalled = false
     
     var success = true
     var cards: Cards?
@@ -32,5 +33,9 @@ extension HomeManagerMock: HomeManagerProtocol {
     
     func save(cards: [Card]?) {
         saveCalled = true
+    }
+    
+    func prepareLoadingImageUrl(urls: [String]) {
+        prepareLoadingImageUrlCalled = true
     }
 }

@@ -62,11 +62,11 @@ extension CardsGalleryViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardsGallery.CollectionViewCellIdentifiers.identifier, for: indexPath) as? CardCollectionViewCell,
-            let card =  presenter.cardsView?[indexPath.row] else {
+            let cardUrl =  presenter.cardsView?[indexPath.row] else {
                 return UICollectionViewCell()
         }
         
-        cell.configure(for: card.img)
+        cell.configure(for: cardUrl)
         
         return cell
     }

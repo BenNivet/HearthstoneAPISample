@@ -28,7 +28,7 @@ struct CardsGallery {
 }
 
 protocol CardsGalleryPresenterProtocol: class {
-    var cardsView: [Card]? { get set }
+    var cardsView: [String]? { get set }
     func viewDidLoad()
 }
 

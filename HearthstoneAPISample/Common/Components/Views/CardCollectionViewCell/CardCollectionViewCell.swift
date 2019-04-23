@@ -24,23 +24,20 @@ class CardCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func configure(for urlImg: String?) {
+    func configure(for urlImg: String) {
+        image = UIImage(named: "defaultCard")
         activityIndicator.startAnimating()
         DispatchQueue.global().async {
-            if let urlString = urlImg,
-                let url = URL(string: urlString),
-                let data = try? Data(contentsOf: url),
-                let image = UIImage(data: data) {
+            ImagesManager.shared.getImage(urlString: urlImg, completion: { image in
                 DispatchQueue.main.async {
-                    self.image = image
+                    if let image = image {
+                        self.image = image
+                    } else {
+                        self.image = UIImage(named: "defaultCard")
+                    }
                     self.activityIndicator.stopAnimating()
                 }
-            } else {
-                DispatchQueue.main.async {
-                    self.image = UIImage(named: "defaultCard")
-                    self.activityIndicator.stopAnimating()
-                }
-            }
+            })
         }
     }
 }

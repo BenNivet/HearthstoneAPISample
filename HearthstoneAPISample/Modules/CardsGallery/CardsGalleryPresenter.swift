@@ -15,7 +15,7 @@ class CardsGalleryPresenter: NSObject {
     var manager: CardsGalleryManagerProtocol!
     
     var cards: [Card]?
-    var cardsView: [Card]? {
+    var cardsView: [String]? {
         didSet {
             view?.configureResultsLabel(show: cardsView?.isEmpty ?? true)
         }
@@ -41,6 +41,6 @@ extension CardsGalleryPresenter: CardsGalleryPresenterProtocol {
     }
     
     private func filterCards() {
-        cardsView = cards?.filter { $0.img != nil }
+        cardsView = cards?.compactMap { $0.img }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1916390A226F76E500D982DC /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19163909226F76E500D982DC /* ImagesManager.swift */; };
 		196596D5226BA9EC00456E6C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D4226BA9EC00456E6C /* Theme.swift */; };
 		196596D7226BAB8100456E6C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D6226BAB8100456E6C /* UIColor+Hex.swift */; };
 		196596F4226CA55300456E6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196596F3226CA55300456E6C /* Localizable.strings */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19163909226F76E500D982DC /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
 		196596D4226BA9EC00456E6C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		196596D6226BAB8100456E6C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		196596F3226CA55300456E6C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 				760C6786D82E27AC072FE616 /* Pods-HearthstoneAPISample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		19163908226F76C900D982DC /* ImagesManager */ = {
+			isa = PBXGroup;
+			children = (
+				19163909226F76E500D982DC /* ImagesManager.swift */,
+			);
+			path = ImagesManager;
 			sourceTree = "<group>";
 		};
 		196596D3226BA9D300456E6C /* Theme */ = {
@@ -350,6 +360,7 @@
 		19C99EB02268FB420023BE32 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				19163908226F76C900D982DC /* ImagesManager */,
 				19659717226DC9FB00456E6C /* Session */,
 				19659704226CCC8100456E6C /* Logger */,
 				19C99EE9226B45B40023BE32 /* Protocols */,
@@ -788,6 +799,7 @@
 				19FDDB05226DDFEB006C2F27 /* SearchViewController.swift in Sources */,
 				19C99EEB226B45B50023BE32 /* LoadableProtocol.swift in Sources */,
 				19C99EDB226B17880023BE32 /* ServiceProvider.swift in Sources */,
+				1916390A226F76E500D982DC /* ImagesManager.swift in Sources */,
 				19C99ED5226B0DEE0023BE32 /* CardsProvider.swift in Sources */,
 				19C99ED9226B125B0023BE32 /* URLRequest+Adapt.swift in Sources */,
 				19659719226DC9FB00456E6C /* Session.swift in Sources */,

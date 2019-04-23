@@ -52,6 +52,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(view.showLoaderCalled)
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertTrue(manager.prepareLoadingImageUrlCalled)
         XCTAssertTrue(view.reloadCalled)
         
         XCTAssertTrue(view.hideLoaderCalled)
@@ -67,6 +68,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(view.showLoaderCalled)
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertFalse(manager.prepareLoadingImageUrlCalled)
         XCTAssertFalse(view.reloadCalled)
         
         XCTAssertTrue(view.hideLoaderCalled)
@@ -83,6 +85,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(view.showLoaderCalled)
         
         XCTAssertTrue(manager.getCardsCalled)
+        XCTAssertFalse(manager.prepareLoadingImageUrlCalled)
         XCTAssertFalse(view.reloadCalled)
         
         XCTAssertTrue(view.hideLoaderCalled)
