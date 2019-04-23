@@ -28,13 +28,9 @@ class CardCollectionViewCell: UICollectionViewCell {
         image = UIImage(named: "defaultCard")
         activityIndicator.startAnimating()
         DispatchQueue.global().async {
-            ImagesManager.shared.getImage(urlString: urlImg, completion: { image in
+            ImagesManager.shared.getCardImage(urlString: urlImg, completion: { image in
                 DispatchQueue.main.async {
-                    if let image = image {
-                        self.image = image
-                    } else {
-                        self.image = UIImage(named: "defaultCard")
-                    }
+                    self.image = image
                     self.activityIndicator.stopAnimating()
                 }
             })

@@ -24,7 +24,7 @@ class HomeManager: HomeManagerProtocol {
     func prepareLoadingImageUrl(urls: [String]?) {
         DispatchQueue.global().async {
             urls?.forEach {
-                ImagesManager.shared.getImage(urlString: $0, completion: nil)
+                ImagesManager.shared.getCardImage(urlString: $0, completion: nil)
             }
         }
     }

@@ -13,10 +13,11 @@ public class ImagesManager {
     static let shared = ImagesManager()
     
     let imageCache = NSCache<NSString, UIImage>()
+    let defaultUIImage = UIImage(named: "defaultCard")
     
-    func getImage(urlString: String, completion: ((UIImage?) -> Void)?) {
+    func getCardImage(urlString: String, completion: ((UIImage?) -> Void)?) {
         guard let url = URL(string: urlString) else {
-            completion?(nil)
+            completion?(defaultUIImage)
             return
         }
         
@@ -26,16 +27,16 @@ public class ImagesManager {
         }
         
         URLSession.shared.dataTask(with: url) { data, _, _ in
-            if let data = data {
-                if let imageToCache = UIImage(data: data) {
-                    self.imageCache.setObject(imageToCache, forKey: urlString as NSString)
-                    completion?(imageToCache)
-                } else {
-                    completion?(nil)
-                }
+            if let data = data,
+                let imageToCache = UIImage(data: data) {
+                self.imageCache.setObject(imageToCache, forKey: urlString as NSString)
+                completion?(imageToCache)
             } else {
-                completion?(nil)
+                if let defaultImage = self.defaultUIImage {
+                    self.imageCache.setObject(defaultImage, forKey: urlString as NSString)
+                }
+                completion?(self.defaultUIImage)
             }
-        }.resume()
+            }.resume()
     }
 }
