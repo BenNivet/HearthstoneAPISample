@@ -22,7 +22,7 @@ class HomeManager: HomeManagerProtocol {
     }
     
     func prepareLoadingImageUrl(urls: [String]) {
-        DispatchQueue.main.async {
+        DispatchQueue.global().async {
             urls.forEach {
                 ImagesManager.shared.getImage(urlString: $0, completion: nil)
             }

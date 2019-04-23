@@ -27,18 +27,16 @@ public class ImagesManager {
         
         let task = URLSession.shared.dataTask(with: url) { data, _, _ in
             if let data = data {
-                DispatchQueue.main.async {
-                    if let imageToCache = UIImage(data: data) {
-                        self.imageCache.setObject(imageToCache, forKey: urlString as NSString)
-                        completion?(imageToCache)
-                    } else {
-                        completion?(nil)
-                    }
+                if let imageToCache = UIImage(data: data) {
+                    self.imageCache.setObject(imageToCache, forKey: urlString as NSString)
+                    completion?(imageToCache)
+                } else {
+                    completion?(nil)
                 }
             } else {
                 completion?(nil)
             }
-            }
+        }
         if completion == nil {
             task.priority = URLSessionTask.lowPriority
         } else {
