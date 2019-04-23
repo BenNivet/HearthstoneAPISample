@@ -25,7 +25,7 @@ public class ImagesManager {
             return
         }
         
-        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+        URLSession.shared.dataTask(with: url) { data, _, _ in
             if let data = data {
                 if let imageToCache = UIImage(data: data) {
                     self.imageCache.setObject(imageToCache, forKey: urlString as NSString)
@@ -36,12 +36,6 @@ public class ImagesManager {
             } else {
                 completion?(nil)
             }
-        }
-        if completion == nil {
-            task.priority = URLSessionTask.lowPriority
-        } else {
-            task.priority = URLSessionTask.highPriority
-        }
-        task.resume()
+        }.resume()
     }
 }
