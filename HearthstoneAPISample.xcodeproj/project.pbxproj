@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1916390A226F76E500D982DC /* ImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19163909226F76E500D982DC /* ImagesManager.swift */; };
+		1916390C226F98B400D982DC /* Search.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1916390B226F98B400D982DC /* Search.strings */; };
+		1916390E226F994500D982DC /* Home.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1916390D226F994500D982DC /* Home.strings */; };
 		196596D5226BA9EC00456E6C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D4226BA9EC00456E6C /* Theme.swift */; };
 		196596D7226BAB8100456E6C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196596D6226BAB8100456E6C /* UIColor+Hex.swift */; };
 		196596F4226CA55300456E6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196596F3226CA55300456E6C /* Localizable.strings */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		19163909226F76E500D982DC /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
+		1916390B226F98B400D982DC /* Search.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Search.strings; sourceTree = "<group>"; };
+		1916390D226F994500D982DC /* Home.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Home.strings; sourceTree = "<group>"; };
 		196596D4226BA9EC00456E6C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		196596D6226BAB8100456E6C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		196596F3226CA55300456E6C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -499,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				19FDDAFD226DDFEB006C2F27 /* Search.storyboard */,
+				1916390B226F98B400D982DC /* Search.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				19FDDB11226DE0C6006C2F27 /* Home.storyboard */,
+				1916390D226F994500D982DC /* Home.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -677,6 +683,8 @@
 				19FDDB06226DDFEB006C2F27 /* Search.storyboard in Resources */,
 				19659728226DD16900456E6C /* TabBar.storyboard in Resources */,
 				19FDDB24226DE0C6006C2F27 /* CardsGallery.storyboard in Resources */,
+				1916390E226F994500D982DC /* Home.strings in Resources */,
+				1916390C226F98B400D982DC /* Search.strings in Resources */,
 				19C99EFF226B6C7E0023BE32 /* SetView.xib in Resources */,
 				196596F8226CAB6F00456E6C /* ClassTableViewCell.xib in Resources */,
 				19FDDB1E226DE0C6006C2F27 /* Home.storyboard in Resources */,

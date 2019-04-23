@@ -5,12 +5,3 @@
  Created by Benjamin CANTE on 18/04/2019.
  Copyright © 2019 com.Nivet. All rights reserved.
  */
-
-// Home
-"HOME_TITLE"            = "Classes";
-
-// CardsGallery
-"CARDS_GALLERY_TITLE"   = "Gallery";
-
-// Search
-"SEARCH_TITLE"          = "Search";

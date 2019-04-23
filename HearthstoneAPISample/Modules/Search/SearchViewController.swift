@@ -33,7 +33,7 @@ extension SearchViewController {
 extension SearchViewController: SearchViewControllerProtocol {
     
     func configureComponents() {
-        navigationController?.navigationBar.topItem?.title = "SEARCH_TITLE".localized
+        navigationController?.navigationBar.topItem?.title = "TITLE".localized(inTable: Search.Constants.tableName)
     }
     
     func performToGallery(with cards: [Card]?) {

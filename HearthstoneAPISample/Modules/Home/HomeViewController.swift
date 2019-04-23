@@ -28,7 +28,7 @@ extension HomeViewController {
 extension HomeViewController: HomeViewControllerProtocol {
     
     func configureComponents() {
-        navigationController?.navigationBar.topItem?.title = "HOME_TITLE".localized
+        navigationController?.navigationBar.topItem?.title = "TITLE".localized(inTable: Home.Constants.tableName)
     }
     
     func registerCell(for identifier: String) {

@@ -42,5 +42,5 @@ protocol HomeViewControllerProtocol: LoadableProtocol {
 protocol HomeManagerProtocol: class {
     func getCards(success: @escaping (Cards?) -> Void, failure: @escaping (Error?) -> Void)
     func save(cards: [Card]?)
-    func prepareLoadingImageUrl(urls: [String])
+    func prepareLoadingImageUrl(urls: [String]?)
 }

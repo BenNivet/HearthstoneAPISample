@@ -44,7 +44,11 @@ extension HomePresenter: HomePresenterProtocol {
             self.classCards = cardsFiltered.map { ClassCards(title: $0.0, cards: $0.1) }
             
             self.view?.reload()
-            self.manager.prepareLoadingImageUrl(urls: allCards.compactMap { $0.img })
+            let urls = self.classCards?
+                .compactMap { $0.cards }
+                .flatMap { $0 }
+                .compactMap { $0.img }
+            self.manager.prepareLoadingImageUrl(urls: urls)
             
         }, failure: { error in
             if let error = error {
