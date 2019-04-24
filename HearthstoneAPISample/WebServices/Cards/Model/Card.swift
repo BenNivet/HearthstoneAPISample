@@ -64,6 +64,14 @@ public class Card: Mappable {
         img <- map["img"]
         imgGold <- map["imgGold"]
     }
+    
+    var description: String {
+        return String(format: "cardId: %@, name: %@, cardSet: %@,rarity: %@",
+                      cardId ?? "",
+                      name ?? "",
+                      cardSet ?? "",
+                      rarity ?? "")
+    }
 }
 
 extension Card: Equatable {

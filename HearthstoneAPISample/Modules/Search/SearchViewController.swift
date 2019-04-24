@@ -13,6 +13,7 @@ class SearchViewController: UIViewController {
 	lazy var presenter: SearchPresenterProtocol = SearchPresenter(view: self, manager: SearchManager())
     
     // MARK: - IBOutlets
+    @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
     // MARK: - IBActions
@@ -34,6 +35,7 @@ extension SearchViewController: SearchViewControllerProtocol {
     
     func configureComponents() {
         navigationController?.navigationBar.topItem?.title = "TITLE".localized(inTable: Search.Constants.tableName)
+        mainLabel.text = "MAIN_LABEL_TITLE".localized(inTable: Search.Constants.tableName)
     }
     
     func performToGallery(with cards: [Card]?) {

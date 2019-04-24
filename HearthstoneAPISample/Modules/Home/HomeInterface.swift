@@ -45,4 +45,5 @@ protocol HomeManagerProtocol: class {
     func saveClassCards(cards: [Card]?)
     func save(cards: [Card]?)
     func prepareLoadingImageUrl(urls: [String]?)
+//    func prepareLoadingCardsDetails(ids: [String]?)
 }

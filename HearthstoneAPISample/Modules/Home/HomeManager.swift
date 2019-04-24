@@ -33,4 +33,17 @@ class HomeManager: HomeManagerProtocol {
             }
         }
     }
+    
+    // Not working, try using https://stackoverflow.com/questions/27021896/nsurlsession-concurrent-requests-with-alamofire or RX to manage request
+//    func prepareLoadingCardsDetails(ids: [String]?) {
+//        DispatchQueue.global().async {
+//            ids?.forEach {
+//                CardsProvider().getCard(name: $0, success: { card in
+//                    Logger.info(card?.description ?? "")
+//                }, failure: { error in
+//                    Logger.error("Error - \(error?.localizedDescription ?? "")")
+//                })
+//            }
+//        }
+//    }
 }

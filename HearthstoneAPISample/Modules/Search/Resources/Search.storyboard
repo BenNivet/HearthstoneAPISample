@@ -57,7 +57,7 @@
                                     <constraint firstItem="bBv-9J-t75" firstAttribute="centerX" secondItem="26u-1S-XWk" secondAttribute="centerX" id="xiA-Sl-XGf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill a field to search your cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqW-zW-mT8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN_LABEL_TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqW-zW-mT8">
                                 <rect key="frame" x="16" y="64" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="C32-ef-ldm"/>
@@ -83,6 +83,7 @@
                     <value key="contentSizeForViewInPopover" type="size" width="800" height="550"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="mainLabel" destination="OqW-zW-mT8" id="2ud-Vv-fgS"/>
                         <outlet property="nameTextField" destination="5TC-UN-nuz" id="FnN-2S-iMQ"/>
                     </connections>
                 </viewController>
